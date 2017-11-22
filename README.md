@@ -5,3 +5,5 @@ When I have two ion-content in the page and place them horizontally inside an io
 But this problem doesn't show in the last ion-content.
 
 [#13456](https://github.com/ionic-team/ionic/issues/13456)
+
+![sample](http://ww2.sinaimg.cn/large/0060lm7Tly1flqovebr74g30af0ij7wi.gif)
