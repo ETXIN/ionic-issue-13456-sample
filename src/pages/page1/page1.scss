@@ -1,0 +1,7 @@
+page-page1 {
+  &:not(.ion-page) {
+    ion-header.header {
+      display: none;
+    }
+  }
+}

@@ -1,14 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+
+  <ion-toolbar>
+
+    <ion-segment [(ngModel)]="initial" (ionChange)="segmentChanged($event)">
+
+      <ion-segment-button value="0">
+        <span>page1</span>
+      </ion-segment-button>
+
+      <ion-segment-button value="1">
+        <span>page2</span>
+      </ion-segment-button>
+
+    </ion-segment>
+
+  </ion-toolbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content no-bounce>
+
+  <ion-slides class="slides-tabs" #slides>
+
+    <ion-slide>
+      <page-page1></page-page1>
+    </ion-slide>
+
+    <ion-slide>
+      <page-page2></page-page2>
+    </ion-slide>
+
+  </ion-slides>
+
 </ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+
+</ion-footer>

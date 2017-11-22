@@ -1,3 +1,20 @@
 page-home {
+  ion-slides.slides-tabs {
+    > .swiper-container {
+      > .swiper-wrapper {
+        > .swiper-slide {
+          display: block;
 
+          > .slide-zoom {
+            text-align: start;
+            height: 100%;
+
+            ion-scroll {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>page1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of items" navPush="detail1">
+      {{ item }}
+    </button>
+  </ion-list>
+
+</ion-content>
